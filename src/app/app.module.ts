@@ -7,6 +7,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { NotFound404Component } from './shared/not-found404/not-found404.component';
 import { MaintenanceComponent } from './shared/maintenance/maintenance.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MaintenanceComponent } from './shared/maintenance/maintenance.component
     FooterComponent,
     HeaderComponent,
     NotFound404Component,
-    MaintenanceComponent
+    MaintenanceComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
