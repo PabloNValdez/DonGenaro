@@ -1,1 +1,19 @@
-/* . */
+.footerGeneralStyle {
+    margin-top: 20px;
+    background-color: black;
+    background-size: 80% 10%;
+    padding: 0px;
+    text-align: center;
+}
+
+.logo{
+    padding-top: 20%;
+}
+
+.socialMedia{
+    padding-top: 7%;
+}
+
+.adresses{
+    padding-top: 7%;
+}
