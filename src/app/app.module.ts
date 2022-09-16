@@ -8,6 +8,9 @@ import { HeaderComponent } from './shared/header/header.component';
 import { NotFound404Component } from './shared/not-found404/not-found404.component';
 import { MaintenanceComponent } from './shared/maintenance/maintenance.component';
 import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -17,11 +20,13 @@ import { HomeComponent } from './home/home.component';
     HeaderComponent,
     NotFound404Component,
     MaintenanceComponent,
-    HomeComponent
+    HomeComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
