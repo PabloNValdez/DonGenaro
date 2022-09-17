@@ -10,6 +10,7 @@ import { MaintenanceComponent } from './Shared/maintenance/maintenance.component
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AttractionsComponent } from './attractions/attractions.component';
 
 
 
@@ -21,7 +22,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     NotFound404Component,
     MaintenanceComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    AttractionsComponent
   ],
   imports: [
     BrowserModule,
