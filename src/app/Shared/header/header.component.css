@@ -1,1 +1,35 @@
-/* .s */
+.logo{
+    text-align: center;
+}
+
+.navbar-center {
+    left: 30%;
+}
+
+.logoSpec{
+    height: 15px;
+    width: 15px;
+    padding-top: 15px;
+}
+
+.navbar-nav{
+    padding-left: 15%;
+    padding-top: 1%;
+}
+
+.text{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .navbar-center {
+        left: 1px;
+    }
+
+    .logoSpec{
+        padding-top: 1px;
+        height: 60px;
+    }
+    
+}
