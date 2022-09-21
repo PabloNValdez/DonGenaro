@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ContactService } from './contact.service';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { ActivatedRoute } from '@angular/router';
+
 
 
 
@@ -13,7 +16,7 @@ export class ContactComponent implements OnInit {
   errorMessage: string = '';
   showError: boolean;
 
-  constructor() { }
+  constructor(private contactService: ContactService) { }
 
   ngOnInit(): void {
     this.questionForm = new FormGroup({
@@ -31,7 +34,27 @@ export class ContactComponent implements OnInit {
   }
 
   sendQuestion(){
+    // const formData = new FormData();
+    // formData.append('name', this.questionForm.get('name').value);
+    // formData.append('email', this.questionForm.get('email').value);
+    // formData.append('body', this.questionForm.get('message').value);
 
+    const values={
+      "name":this.questionForm.get('name').value,
+      "userEmail": this.questionForm.get('email').value,
+      "body":this.questionForm.get('message').value
+    }
+
+
+    this.contactService.sendEmail(values).subscribe(response=>{
+      // this.toastr.success(response.message);
+        setTimeout(() => {
+          this.questionForm.reset();
+          // this.router.navigate(['/dashboard/list-shops-professionals']);
+        }, 100);
+    }, error =>{
+      console.log(error);
+    });
   }
 }
 
