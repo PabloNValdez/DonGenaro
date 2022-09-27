@@ -8,8 +8,9 @@
 
 /*Cuando cambiemos el logo, probablemente haya que modificar esto*/
 .logoSpec{
-    height: 150px;
-    width: 270px;
+    /* height: 150px;
+    width: 270px; */
+    object-fit: cover;
 }
 
 .navbar-nav{

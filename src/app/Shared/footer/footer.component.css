@@ -7,7 +7,9 @@
 }
 
 .logo{
-    padding-top: 20%;
+    /* padding-top: 20%; */
+    margin-top: 20%;
+    background-color: white;
 }
 
 .socialMedia{
